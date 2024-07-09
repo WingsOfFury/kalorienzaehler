@@ -1,0 +1,69 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <title>Täglicher Kalorienzähler</title>
+      </head>
+      <body>
+        <main>
+          <h1>Kalorienzähler</h1>
+          <div class="container">
+            <form id="calorie-counter">
+              <label for="budget">Budget</label>
+              <input
+                type="number"
+                min="0"
+                id="budget"
+                placeholder="Kalorienzähler"
+                required
+              />
+              <fieldset id="breakfast">
+                <legend>Frühstück</legend>
+                <div class="input-container"></div>
+              </fieldset>
+              <fieldset id="lunch">
+                <legend>Mittagessen</legend>
+                <div class="input-container"></div>
+              </fieldset>
+              <fieldset id="dinner">
+                <legend>Abendessen</legend>
+                <div class="input-container"></div>
+              </fieldset>
+              <fieldset id="snacks">
+                <legend>Snacks</legend>
+                <div class="input-container"></div>
+              </fieldset>
+              <fieldset id="exercise">
+                <legend>Bewegungen</legend>
+                <div class="input-container"></div>
+              </fieldset>
+              <div class="controls">
+                <span>
+                  <label for="entry-dropdown">Füge Essen oder Bewegung hinzu:</label>
+                  <select id="entry-dropdown" name="options">
+                    <option value="breakfast" selected>Frühstück</option>
+                    <option value="lunch">Mittagessen</option>
+                    <option value="dinner">Abendessen</option>
+                    <option value="snacks">Snacks</option>
+                    <option value="exercise">Bewegungen</option>
+                  </select>
+                  <button type="button" id="add-entry">Eintrag hinzufügen</button>
+                </span>
+              </div>
+              <div>
+                <button type="submit">
+                    Berechne die verbleibenden Kalorien
+                </button>
+                <button type="button" id="clear">Löschen</button>
+              </div>
+            </form>
+            <div id="output" class="output hide"></div>
+          </div>
+        </main>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
